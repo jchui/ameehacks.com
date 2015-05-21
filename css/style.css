@@ -105,6 +105,10 @@ section[name="nav"] .power {
 	
 }
 
+section[name="nav"] .power a {
+	color: #ffffff;
+}
+
 section[name="nav"].scroll {
 	background-color: rgba(255,255,255,0.95);
 	border-bottom: 1px solid #d1d1d1 !important;
@@ -116,6 +120,10 @@ section[name="nav"].scroll li a {
 }
 
 section[name="nav"].scroll .power {
+	color: #000000;
+}
+
+section[name="nav"].scroll .power a {
 	color: #000000;
 }
 
