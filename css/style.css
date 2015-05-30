@@ -59,7 +59,7 @@ section[name="nav"] {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 15px 0 0px 0;
+	padding: 15px 0 15px 0;
 	border-bottom: 1px solid rgba(255,255,255,0.6);
 	z-index: 100;
 }
@@ -83,7 +83,7 @@ section[name="nav"] li {
 	font-weight: 100px;
 	padding: 0 15px;
 	position: relative;
-	top: 3px;
+	top: 18px;
 }
 
 section[name="nav"] li a {
@@ -91,13 +91,13 @@ section[name="nav"] li a {
 }
 
 section[name="nav"] img {
-	height: 30px;
+	height: 60px; 
 }
 
 section[name="nav"] .power {
 	display: inline-block;
 	position: relative;
-	top: 10px;
+	top: 5px;
 	left: 10px;
 	color: #ffffff;
 	font-weight: 100;
@@ -109,10 +109,14 @@ section[name="nav"] .power a {
 	color: #ffffff;
 }
 
+section[name="nav"] .power .amee {
+	font-size: 14px;
+}
+
 section[name="nav"].scroll {
 	background-color: rgba(255,255,255,0.95);
 	border-bottom: 1px solid #d1d1d1 !important;
-	transition: 0.6s;
+	transition: 0.8s;
 }
 
 section[name="nav"].scroll li a {
@@ -127,8 +131,12 @@ section[name="nav"].scroll .power a {
 	color: #000000;
 }
 
-section[name="header"] {
+section[name="nav"].scroll img {
+	-webkit-filter: brightness(100%); 
+	transition: 0.1s;
+}
 
+section[name="header"] {
 	height: 100%;
 	padding-top: 200px;
 	
