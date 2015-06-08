@@ -456,6 +456,20 @@ section[name="organisers"] p.position {
 	opacity: 0.8;
 }
 
+section[name="organisers"] p.social i {
+	font-size: 20px;
+	padding: 0 5px;
+}
+
+section[name="organisers"] p.social a {
+	color: #ffffff;
+	opacity: 0.7;
+}
+
+section[name="organisers"] p.social a:hover {
+	opacity: 1;
+}
+
 section[name="organisers"] h3, section[name="organisers"] h2 {
 	color: #ffffff;
 }
