@@ -271,7 +271,7 @@ section[name="about2"] .lefta:hover > .cover, section[name="about2"] .righta:hov
 }
 
 section[name="about2"] .content {
-	background-color: #212739;
+	background-color: #212639;
 	height: 310px;
 	color: #ffffff;
 }
@@ -287,7 +287,7 @@ section[name="about2"] .content p {
 	padding: 0;
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
-	color: #388bc1;
+	color: rgba(255,255,255,0.9);
 }
 
 section[name="about2"] .content .number {
@@ -299,7 +299,8 @@ section[name="about2"] .content .number {
 section[name="about2"] .content .title {
 	font-size: 15px;
 	padding-bottom: 15px;
-	font-weight: 500;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;  
 	color: #ffffff;
 }
 
