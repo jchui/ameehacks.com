@@ -662,3 +662,9 @@ section[name="footer"] p {
 	padding: 0;
 	margin: 0;
 }
+
+@media only screen and (max-width: 40.0625em) {
+	section[name="header"] {
+		min-height: 900px;
+	}
+}
