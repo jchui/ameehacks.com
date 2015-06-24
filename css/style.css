@@ -257,27 +257,32 @@ section[name="about2"] .row, section[name="about2"] .columns {
 }
 
 section[name="about2"] .lefta, section[name="about2"] .righta {
-	background-color: #b4b4b4;
 	display: block;
 	height: 310px;
 }
 
 section[name="about2"] .cover {
-	opacity: 0;
-	background-color: #256a97;
+	opacity: 1;
+	background-color: rgba(0,0,0,0.4);
+	color: #ffffff;
 	height: 100%;
 	text-align: center;
 	padding-top: 140px;
-	
-	text-transform: uppercase;
-	font-size: 15px;
-	font-weight: 600;
+}
+
+section[name="about2"] .cover span {
+	position: relative;
+	top: -5px;
+	padding-left: 10px;
+	font-weight: 100;
 }
 
 section[name="about2"] .lefta:hover > .cover, section[name="about2"] .righta:hover > .cover {
-	opacity: 100;
+	opacity: 0.9;
 	cursor: pointer;
 	transition: 0.5s;
+	background-color: #ffffff;
+	color: #256a97;
 }
 
 section[name="about2"] .content {
