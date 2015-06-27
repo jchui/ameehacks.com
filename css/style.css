@@ -173,8 +173,6 @@ section[name="nav"].scroll img {
 
 section[name="header"] {
 	height: 100%;
-	padding-top: 200px;
-	
 	overflow: hidden;
 }
 
@@ -235,6 +233,12 @@ section[name="header"] a.button {
 section[name="header"] a.button:hover {
 	transition: 0.7s;
 	background-color: #f2913c;
+}
+
+section[name="header"] .headwrap {
+	position: relative;
+	top: 45%;
+	transform: translateY(45%);
 }
 
 section[name="about"] .row {
