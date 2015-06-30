@@ -268,8 +268,30 @@ section[name="header"] a.button:hover {
 	background-color: #f2913c;
 }
 
+section[name="header"] .social {
+	background-color: #ffffff;
+	padding: 5px 20px;
+	font-size: 12px;
+	opacity: 0.6;
+}
+
+section[name="header"] .social:hover {
+	opacity: 1;
+	transition: 1s;
+}
+
+section[name="header"] .social.twitter{
+	background-color: #00aced;
+	color: #ffffff;
+}
+
+section[name="header"] .social.facebook {
+	background-color: #3b5998;
+	color: #ffffff;
+}
+
 section[name="header"] .headwrap {
-	padding-top: 150px;
+	padding-top: 120px;
 }
 
 section[name="about"] .row {
