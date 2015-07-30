@@ -548,6 +548,21 @@ section[name="sponsors"] .core {
 	font-size: 14px;
 }
 
+section[name="sponsors"] .partners {
+	color: #454545;
+	font-size: 14px;
+}
+
+section[name="sponsors"] .logos {
+	text-align: center;
+}
+
+section[name="sponsors"] .logos img {
+	max-height: 100px;
+	max-width: 250px;
+	padding: 10px 15px;
+}
+
 section[name="mentors"] img {
 	margin-top: 30px;
 	border-radius: 50%;
