@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMEE Hacks | Innovating Medical Education</title>
     <meta name="description" content="48 hours to innovate medication education with Europe's best developers, designers, and medical enthusiasts! 4th - 6th September in Glasgow. Apply today at ameehacks.com">
-    <link rel="stylesheet" href="./css/foundation.css" />
-    <link rel="stylesheet" href="./css/foundation-icons/foundation-icons.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     
     <meta property="og:title" content="AMEE Hacks | Innovating Medical Education">
 	<meta property="og:site_name" content="AMEE Hacks">
@@ -22,30 +19,28 @@
 	<meta name="twitter:title" content="AMEE Hacks | Innovating Medical Education">
 	<meta name="twitter:description" content="48 hours to innovate medication education with Europe's best developers, designers, and medical enthusiasts! 4th - 6th September in Glasgow. Apply today at ameehacks.com">
 	<meta name="twitter:image" content="http://ameehacks.com/img/cover.png">
-    
-    <link rel="icon" 
-      type="image/png" 
-      href="img/favicon.ico">
+	
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
     
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
-   
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+    
+    <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png">
+    
     <script src="js/vendor/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
     
     <script>
-    	$(document).ready(function() {
-		    $(document).scroll(function(){
-		        t = (10 - $(this).scrollTop())/100;
-		        if (t<0) {
-		        	t=0;
-		        	$('#nav').addClass("scroll");
-		        	$('#nav img').attr('src', 'img/amee-coloured.png');
-		        } else {
-			        $('#nav').removeClass("scroll");
-			        $('#nav img').attr('src', 'img/amee-white.png');
-		        }
-		    })
+    	$(window).bind('scroll', function () {
+		    if ($(window).scrollTop() > 600) {
+		        $('#navbar').addClass('scroll');
+		    } else {
+		        $('#navbar').removeClass('scroll');
+		    }
 		});
 
 		$(function() {
@@ -76,7 +71,7 @@
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		      if (target.length) {
 		        $('html,body').animate({
-		          scrollTop: (target.offset().top - 90)
+		          scrollTop: (target.offset().top - 45)
 		        }, 1000);
 		        return false;
 		      }
@@ -88,163 +83,111 @@
     </script>
   </head>
   <body>
-  
-  <section name="nav" id="nav">
-  		<div class="row">
-  			<div class="large-3 columns show-for-large-up">
-  				<a href="#header"><img src="img/amee-white.png" alt="logo-w"></a>
-  				<p class="power"><a href="https://www.amee.org/conferences/amee-2015/hackathon">Powered by <br/><span class="amee">AMEE</span></a></p>
+  	
+  	<section name="main-nav" class="show-for-large-up">
+  		<div class="row max-width">
+  			<div class="large-4 columns">
+	  			<img class="logo" src="img/logo-c.png" alt="logo-c"/>
   			</div>
-  			<div class="large-9 columns show-for-large-up">
-  				<ul>
-  					<li><a href="#about">About</a></li>
-  					<li><a href="#schedule">Schedule</a></li>
-  					<li><a href="#organisers">Organisers</a></li>
-  					<li><a href="#sponsors">Sponsors</a></li>
-  					<li><a href="#mentors">Mentors</a></li>
-  					<li><a href="#prizes">Prizes</a></li>
-  					<li><a href="#map">Apply Now</a></li>
-  				</ul>  			
+  			<div class="large-8 columns">
   			</div>
-  			
-  			<div class="sticky hide-for-large-up">
-  				<center><a href="#header"><img src="img/amee-white.png" alt="amee-white"></a></center>
-				<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Menu</button><br>
-				<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
-					<li><a href="#about">About</a></li>
-  					<li><a href="#schedule">Schedule</a></li>
-  					<li><a href="#organisers">Organisers</a></li>
-  					<li><a href="#sponsors">Sponsors</a></li>
-  					<li><a href="#mentors">Mentors</a></li>
-  					<li><a href="#prizes">Prizes</a></li>
-  					<li><a href="#map">Apply Now</a></li>
-				</ul>
-			</div>
   		</div>
   	</section>
     
-    <section name="header">
-    	
-    	<div class="video-wrap"></div>
-    	<video autoplay loop muted="mute" poster="img/bg2.jpg" id="bgvid">
-		<source src="assets/video.mp4" type="video/mp4">
-		</video>
+    <section name="main-top" class="show-for-large-up">
+    	<div class="split-l c-b">
+    		<h1>Medicine.</h1>
+    		<p>Be part of the world's first medical education hackathon and pioneer the future of learning.<br/><br/>
+    		</p>
+    		<a class="typeform-share button applytop" href="https://hackpartners.typeform.com/to/Tu7SFf" data-mode="1" target="_blank">Apply Now</a>
+    				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+    	</div>
+    	<div class="split-r c-w">
+    		<h1>Education.</h1>
+    		<p>4th - 6th of September, SECC Glasgow</p>
+    		<img src="img/secc.png" alt="secc" width="400px" height="" style="position:relative; top:97px;left:180px;" />
+    	</div>
+    </section>
     
-    	<div class="row">
+    <section name="navbar" id="navbar" class="show-for-large-up">
+    	<div class="row max-width">
     		<div class="large-12 columns">
-    		<div class="headwrap">
-    			<h1>Medicine. Education. Innovation. Technology.</h1>
-    			<h2>Be part of the world's first medical education hackathon</h2>
-    			<h2>and pioneer the future of learning.</h2>
-    			<center>
-    			<hr/>
-    				<h4>4th - 6th of September, Glasgow</h4>
-    				<p>
-    				<a class="typeform-share button" href="https://hackpartners.typeform.com/to/Tu7SFf" data-mode="1" target="_blank">Apply Now</a>
-    				<!--<a class="typeform-share button" href="ready.html" data-mode="1" target="_blank">Applications Open in Late June</a>-->
-
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-    				</p>
-    				<a href="http://twitter.com/ameehacks" class="social twitter"><i class="fi-social-twitter"></i> Twitter</a> <a href="http://facebook.com/ameehacks" class="social facebook"><i class="fi-social-facebook"></i> Facebook</a>
-    			</center>
-    			<br/><br/>
-    			<h3>Powered by <a href="https://www.amee.org/conferences/amee-2015/hackathon"><span class="amee">AMEE</span></a></h3>
-    		</div>
+    			<ul>
+    				<li><a href="#about">About</a></li>
+    				<li><a href="#submit">Challenge</a></li>
+  					<li><a href="#schedule">Schedule</a></li>
+  					<li><a href="#organisers">Organisers</a></li>
+  					<li><a href="#sponsors">Sponsors</a></li>
+  					<li><a href="#mentors">Mentors</a></li>
+  					<li><a href="#prizes">Prizes</a></li>
+  					<li><a href="#faq">FAQ</a></li>
+  					<li>
+  						<a class="typeform-share" href="https://hackpartners.typeform.com/to/Tu7SFf" data-mode="1" target="_blank">Apply Now</a>
+    				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+    				</li>
+    			</ul>
     		</div>
     	</div>
+    </section>
+    
+    <div class="mobile-spacer hide-for-large-up"></div>
+    
+    <section name="mobile" class="hide-for-large-up">
+	    <div class="sticky">
+			<center><a href="#header"><img src="img/logo-c.png"></a></center>
+			<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Menu</button><br>
+			<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+				<li><a href="#about">About</a></li>
+					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#organisers">Organisers</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="#mentors">Mentors</a></li>
+					<li><a href="#prizes">Prizes</a></li>
+					<li><a href="#map">Apply Now</a></li>
+			</ul>
+		</div>
     </section>
     
     <section name="about" class="white">
     	<div class="row">
     		<div class="large-12 columns">
-    			<h1>About AMEE Hacks</h1>
+    			<h1>What is AMEE Hacks?</h1>
     			<hr/>
+    			<center>
 				<p>
-					AMEE Hacks is the world’s best medical education hackathon. Our goal is to become the catalyst that drives technology innovation within the medical education industry. Powered by AMEE, we're bringing together the best developers, designers and medical experts from around the world for the purpose of building new products for medical education.
+					AMEE Hacks is the world’s best medical education hackathon. Our goal is to become the catalyst that drives technology innovation within the medical education industry. Powered by AMEE, we're bringing together the best developers, designers and medical experts from around the world for the purpose of building new products for medical education.<br/><br/>
 				</p>
 				
-				<br/><br/>
-				
-				<center>
-					<p>
-						<a href="#" data-reveal-id="myModal"><i class="fi-list-thumbnails"></i> Click to expand FAQs.</a>
-					</p>
-				</center>
-				
-				<div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-				  <h2 id="modalTitle">Frequently Asked Questions</h2>
-				  <br/>
-				  <p>
-				  	<b>What is a hackathon?</b><br/>
-					A hackathon is a place where designers, developers, and professionals come together to take an idea and turn it into a working prototype in 48 hours. 
-				  </p>
-				  <p>
-				  	<b>Can I apply as a team?</b><br/>
-					Unfortunately not. We are only accepting individual applications for AMEE Hacks.
-				  </p>
-				  <p>
-				  	<b>What about travel and accommodation?</b><br/>
-					Accommodation will be provided on the Friday and Saturday night. Travel costs may be reimbursed on an individual basis. Please contact us directly for more information: <a href="mailto:medx@hackpartners.com">medx@hackpartners.com</a>.
-				  </p>
-				  <p>
-				  	<b>Will there be free food & wifi?</b><br/>
-					Of course! 
-				  </p>
-				  <p>
-				  	<b>Will I receive any help during the hackathon?</b><br/>
-					Definitely. Thats what our mentors are for! During the hackathon, we will have design, development, and medical mentors floating inbetween teams.
-				  </p>
-				  <p>
-				  	<b>Can I participate remotely?</b><br/>
-					Unfortunately not. We currently do not have the capacity to host remote teams, but we'll definitely look into this for AMEE Hacks 2016! 
-				  </p>
-				  <p>
-				  	<b>Who owns the IP?</b><br/>
-					The code and designs are owned by the individual team member who created them. The idea is not owned by anyone.
-				  </p>
-				  <p>
-				  	<b>What do I need to bring?</b><br/>
-					Laptops, chargers, any gear that you might want to use during the hackathon, and sleeping bags!
-				  </p>
-				  <p>
-				  	<b>How much does the event cost?</b><br/>
-					Application is free. If selected to participate, we will ask you to pay a &pound;20 fee. This will go towards event costs and prizes.
-				  </p>
-				  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-				</div>
+				<p>
+					<a href="https://www.amee.org/conferences/amee-2015/hackathon">amee.org/conferences/amee-2015/hackathon</a>
+				</p>
+
+    			</center>
+    			
     		</div>
     	</div>
     </section>
     
-    <section name="about2" class="show-for-large-up">
+    <section name="submit" class="blue">
     	<div class="row">
-    		<a href="http://twitter.com/ameehacks"><div class="large-2 columns lefta" style="background-image:url('http://uanews.org/sites/default/files/story-images/google%20glass%20b-roll_mov-2_2.jpg');background-size:cover;background-position-x:-250px;background-position-y:0px;">
-    			<div class="cover"><i class="fi-social-twitter" style="font-size:30px;"></i><span>@ameehacks</span></div>
-    		</div></a>
-    		<div class="large-8 columns content blue">
-    			<div class="row">
-    				<div class="large-4 columns">
-    					<center>
-    						<p class="number">80</p>
-    						<p class="title">Participants</p>
-    						<p>Will be selected out of 300 applicants to come to Glasgow to build new technologies that enhance the medical learning experience.</p>
-    					</center>
-    				</div>
-    				<div class="large-4 columns">
-    					<p class="number">48</p>
-						<p class="title">Hours</p>
-						<p>Is the time they will have to achieve this. We will be holding workshops showcasing the latest technologies available during the weekend.</p>
-    				</div>
-    				<div class="large-4 columns">
-    					<p class="number">10+</p>
-						<p class="title">Mentors & Speakers</p>
-						<p>We will have medical professionals, e-learning experts, entrepreneurs and investors present to advise and guide participants!</p>
-    				</div>
-    			</div>
+    		<div class="large-12 columns">
+    			<h1>Submit your own challenge!</h1>
+    			<hr/>
+    			<center>
+				<p>Are you facing problems with medical education? Dedicated teams of hackathon enthusiasts, instructional designers and medical educationalists will co-create technical solutions to identified problems, over a period of 48 hours. </p>
+				<br/>
+				<p>As an example, the AMEE General Secretary’s Hackathon Challenge is: “How can learning be customised and tailored to the personal needs of the individual student as part of an adaptive learning programme?”</p>
+				</p>
+				<br/><br/>
+				
+				<center>
+					<p>
+						<a class="typeform-share button" href="http://ameehacks.com/ameechallenge/" data-mode="1" target="_blank"><i class="fi-pencil"></i> Submit a Challenge.</a>
+						<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+					</p>
+				</center>
+    			</center>
     		</div>
-    		<a href="http://facebook.com/ameehacks"><div class="large-2 columns righta" style="background-image:url('http://medicalbuy.net/wp-content/uploads/2010/10/iPad-for-doctor-to-check-xray-med-apps.jpg');background-size:cover;background-position-x:-200px;background-position-y:0px;">
-    			<div class="cover"><i class="fi-social-facebook" style="font-size:30px;"></i><span>ameehacks</span></div>
-    		</div></a>
     	</div>
     </section>
     
@@ -883,21 +826,21 @@
 					today = new Date();
 					msPerDay = 24 * 60 * 60 * 1000 ;
 					
-					Day1 = "August 14, 2015";
+					Day1 = "August 21, 2015";
 					ReleaseDay1 = new Date(Day1);
 					
 					timeLeft = (ReleaseDay1.getTime() - today.getTime());
 					e_daysLeft = timeLeft / msPerDay;
 					days1 = Math.floor(e_daysLeft);
 					
-					Day2 = "August 7, 2015";
+					Day2 = "August 14, 2015";
 					ReleaseDay2 = new Date(Day2);
 					
 					timeLeft = (ReleaseDay2.getTime() - today.getTime());
 					e_daysLeft = timeLeft / msPerDay;
 					days2 = Math.floor(e_daysLeft);
 					
-					Day3 = "July 31 2015";
+					Day3 = "August 7, 2015";
 					ReleaseDay3 = new Date(Day3);
 					
 					timeLeft = (ReleaseDay3.getTime() - today.getTime());
@@ -961,8 +904,8 @@
     				</div>
     				<div class="large-3 columns">
     					<img src="https://media2.wnyc.org/i/620/372/l/80/1/blackbox.jpeg" />
-    					<p class="name">Best Development</p>
-    					<p class="desc">What is the biggest technical hurdle you've overcome to create your product?</p>
+    					<p class="name">Best Developer</p>
+    					<p class="desc">The most impressive hack of the weekend!</p>
     				</div>
     				<div class="large-3 columns">
     					<img src="http://rlv.zcache.ca/zombie_crate_foremostfavorbox-r25769149c7b046238dbd65ab34faaea5_zf1y8_324.jpg?rlvnet=1" />
@@ -977,39 +920,66 @@
     	</div>
     </section>
     
-    <section name="map">
+    <section name="faq" class="blue">
     	<div class="row">
-    		<div class="large-3 columns">
-    			<div class="box">
-    				<p class="location">Scottish Exhibition and Conference Centre, Glasgow, UK</p>
-    				<p class="date">4-6 September 2015</p>
-    				<p class="link"><a href="https://www.amee.org/conferences/amee-2015/hackathon">https://www.amee.org/conferences/amee-2015</a></p>
-    			</div>
+    		<div class="large-12 columns">
+    			<h1>Frequently Asked Questions</h1>
+    			<hr/>
+    			
+    			<p>
+				  	<b>What is a hackathon?</b><br/>
+					A hackathon is a place where designers, developers, and professionals come together to take an idea and turn it into a working prototype in 48 hours. 
+				  </p>
+				  <p>
+				  	<b>Can I apply as a team?</b><br/>
+					Unfortunately not. We are only accepting individual applications for AMEE Hacks.
+				  </p>
+				  <p>
+				  	<b>What about travel and accommodation?</b><br/>
+					Accommodation will be provided on the Friday and Saturday night. Travel costs may be reimbursed on an individual basis. Please contact us directly for more information: <a href="mailto:medx@hackpartners.com">medx@hackpartners.com</a>.
+				  </p>
+				  <p>
+				  	<b>Will there be free food & wifi?</b><br/>
+					Of course! 
+				  </p>
+				  <p>
+				  	<b>Will I receive any help during the hackathon?</b><br/>
+					Definitely. Thats what our mentors are for! During the hackathon, we will have design, development, and medical mentors floating inbetween teams.
+				  </p>
+				  <p>
+				  	<b>Can I participate remotely?</b><br/>
+					Unfortunately not. We currently do not have the capacity to host remote teams, but we'll definitely look into this for AMEE Hacks 2016! 
+				  </p>
+				  <p>
+				  	<b>Who owns the IP?</b><br/>
+					The code and designs are owned by the individual team member who created them. The idea is not owned by anyone.
+				  </p>
+				  <p>
+				  	<b>What do I need to bring?</b><br/>
+					Laptops, chargers, any gear that you might want to use during the hackathon, and sleeping bags!
+				  </p>
+				  <p>
+				  	<b>How much does the event cost?</b><br/>
+					Application is free. If selected to participate, we will ask you to pay a &pound;20 fee. This will go towards event costs and prizes.
+				  </p>
+				  <p>
+				  	<b>Can you reimburse travel?</b><br/>
+					Selected participants can apply for reimbursement of up to &pound;50 for UK residents, and &pound;100 for EU/US residents.
+				  </p>
     		</div>
-    	</div>	
+    	</div>
     </section>
     
     <section name="apply">
     	<div class="row">
     		<div class="large-12 columns">
-    			<p>Hi, I am a 
-    			<select>
-    				<option value="" hidden="true">Pick your field !</option>
-    				<option value="">Developer</option>
-    				<option value="">Designer</option>
-    				<option value="">Medical Professional</option>
-    				<option value="">Education Professional</option>
-    				<option value="">Other</option>
-    			</select> 
-    			<span id="width_tmp"></span>
-    			and I am interested in attending this AMEE Hacks event in <a href="https://www.amee.org/conferences/amee-2015/hackathon"><span class="amee">AMEE</span></a> Glasgow!</p>
-    			
-    			<a class="typeform-share applybtn" href="https://hackpartners.typeform.com/to/Tu7SFf" data-mode="1" target="_blank">Apply Now</a>
-    			<!--<a class="typeform-share applybtn" href="ready.html" data-mode="1" target="_blank">Applications Open in Late June</a>-->
-    			
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+				  <center>
+				  	<p>What are you waiting for?</p>
+				  <a class="typeform-share button applytop" href="https://hackpartners.typeform.com/to/Tu7SFf" data-mode="1" target="_blank">Apply Now</a>
+    				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+				  </center>
     		</div>
-    	</div>	
+    	</div>
     </section>
     
     <section name="footer">
