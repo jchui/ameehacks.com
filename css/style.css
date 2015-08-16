@@ -489,6 +489,10 @@ section[name="mentors"] p.position {
 	opacity: 0.8;
 }
 
+section[name="mentors"] p.position a {
+	text-decoration: underline;
+}
+
 section[name="mentors"] h4 {
 	margin-top: 40px;
 }
